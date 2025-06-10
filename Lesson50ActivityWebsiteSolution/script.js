@@ -3,11 +3,12 @@ let data,songs;
 function init(){
   $.ajaxSetup({async: false});
   
-  let link = "https://e152c473-5217-4491-a6d1-2a264147c932-00-zli62kd77q4u.picard.replit.dev";
-  let route= "/songs"
+  let link = "https://literate-space-chainsaw-695gw4jrvr9gh456q-8500.app.github.dev/employees";
+  
+  let route= ""
   songs = $.getJSON(link+route).responseJSON;
-
-  generateCards(songs);
+  console.log(songs)
+  //generateCards(songs);
 
 }
 
